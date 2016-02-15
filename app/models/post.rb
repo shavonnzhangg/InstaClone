@@ -1,7 +1,6 @@
 class Post < ActiveRecord::Base
-	validates :image, presence: true
+  validates :image, presence: true
 
-	has_attached_file :image, styles: {medium: "640px"}		#include Paperclip functionality
-	validates_attachment :image,
-		content_type: {content_type: ["image/jpeg" , "image/gif" , "image/png"]}
-	end
+  has_attached_file :image, styles: { :medium => "640x" }
+  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+end

@@ -49,3 +49,4 @@ gem 'coffee-script-source', '1.8.0'
 gem "paperclip", "~> 4.3"
 #create forms
 gem 'simple_form'
+gem 'cocaine', '0.5.5'
