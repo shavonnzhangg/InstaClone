@@ -50,3 +50,6 @@ gem "paperclip", "~> 4.3"
 #create forms
 gem 'simple_form'
 gem 'cocaine', '0.5.5'
+gem 'image_magick'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'devise'
